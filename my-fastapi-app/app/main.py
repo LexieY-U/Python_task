@@ -10,3 +10,6 @@ app = FastAPI()
 async def home(): # defines an asynchronous function named read_root that will handle incoming requests to this endpoint.
     return {"message": "Welcome to my bookshop!"} # returns a JSON response
 
+@app.get("/list-of-books")
+async def list_of_books():
+    return []
