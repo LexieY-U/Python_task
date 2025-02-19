@@ -10,7 +10,7 @@ A simple FastAPI-based bookshop RESTful API with SQLite database, featuring:
 - Logging & Observability
 - Automated tests with Pytest
 
-🚀 Getting Started
+## 🚀 Getting Started
 1️⃣ Clone the Repository
  ```bash
 git clone https://github.com/your-username/my-fastapi-app.git
