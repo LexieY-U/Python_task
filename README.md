@@ -14,7 +14,7 @@ A simple FastAPI-based bookshop RESTful API with SQLite database, featuring:
 1️⃣ Clone the Repository
  ```bash
 git clone https://github.com/your-username/my-fastapi-app.git
-cd bookshop-api
+cd my-fastapi-app
 ```
 2️⃣ Create a Virtual Environment
 ```bash
