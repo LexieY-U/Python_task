@@ -1,5 +1,5 @@
  # Database connection setup
-
+import sqlite3
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
@@ -10,9 +10,9 @@ DATABASE_URL = "sqlite:///./bookshop.db"
 # Create a Database Engine
 # Create a connection that allows access from different threads
 engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
-# Define Session Factory
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
+
 
 # Define a Dependency for Database Access
 async def get_db():
