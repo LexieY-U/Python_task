@@ -1,3 +1,5 @@
+# Pydantic models for validation
+
 from pydantic import BaseModel, Field
 
 # Create book schema
