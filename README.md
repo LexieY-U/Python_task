@@ -1,12 +1,14 @@
+## Introduction
 📚 FastAPI Bookshop API
 A simple FastAPI-based bookshop RESTful API with SQLite database, featuring:
 
-**CRUD operations**: (Create, Read, Delete books)
-**Database Integration**: Persistent storage using **SQLite** with SQLAlchemy ORM.
-**Pydantic validation**: Request data
-**SQLAlchemy ORM**: database management
-Logging & Observability
-Automated tests with Pytest
+## Features
+- **CRUD operations**: (Create, Read, Delete books)
+- **Database Integration**: Persistent storage using **SQLite** with SQLAlchemy ORM.
+- **Pydantic validation**: Request data
+- **SQLAlchemy ORM**: database management
+- Logging & Observability
+- Automated tests with Pytest
 
 🚀 Getting Started
 1️⃣ Clone the Repository
