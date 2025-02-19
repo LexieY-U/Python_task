@@ -35,12 +35,14 @@ http://127.0.0.1:9000
 ```
 
 ## 🛠 API Endpoints
-📌 Home
+### 📌 Home
 GET / → Returns welcome message.
-📌 Books
+
+### 📌 Books
 GET /books/ → List all books
 POST /add-books/ → Add a new book
-Request Body (JSON):
+
+### Request Body (JSON):
 ```json
 json
 {
