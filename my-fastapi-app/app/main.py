@@ -2,8 +2,8 @@
 
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
-from database import engine, Base, get_db
 from models import Book
+from database import engine, Base, get_db
 from schemas import BookCreate, BookResponse
 from curd import create_book, get_books, delete_book
 

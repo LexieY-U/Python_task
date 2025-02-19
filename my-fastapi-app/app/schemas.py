@@ -17,4 +17,4 @@ class BookResponse(BookCreate):
     # Customise model behavior using the Config class
     class Config:
         # Enable automatic conversion from database models to Pydantic models.
-        orm_mode = True
+        from_attributes = True
