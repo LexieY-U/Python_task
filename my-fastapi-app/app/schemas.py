@@ -4,7 +4,6 @@ from pydantic import BaseModel, Field
 
 # Create book schema
 class BookCreate(BaseModel):
-    id: int
     title: str = Field(..., min_length=1, max_length=100) # Field Validation
     author: str = Field(..., min_length=1, max_length=50)
     price: float = Field(..., gt=0)  # Price must be > 0; gt -> greater than
