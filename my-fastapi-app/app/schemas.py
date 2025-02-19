@@ -1,4 +1,4 @@
-# Pydantic models for validation
+# Pydantic models for validation and documentation
 
 from pydantic import BaseModel, Field
 
