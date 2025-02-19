@@ -66,8 +66,10 @@ json
 }
 ```
 
-DELETE /books/{book_id} → Remove a book
-🧪 Running Tests
+### DELETE 
+/books/{book_id} → Remove a book
+
+### 🧪 Running Tests
 To run unit tests:
 ```bash
 pytest
