@@ -34,7 +34,7 @@ Server will run at:
 http://127.0.0.1:9000
 ```
 
-🛠 API Endpoints
+## 🛠 API Endpoints
 📌 Home
 GET / → Returns welcome message.
 📌 Books
@@ -71,7 +71,9 @@ To run unit tests:
 pytest
 ```
 
-🛠 Project Structure
+## 🛠 Project Structure
+
+```
 my-fastapi-app/
 │── app/
 │   ├── __init__.py
@@ -86,6 +88,8 @@ my-fastapi-app/
 │   ├── test_main.py    # Pytest test cases
 │── requirements.txt
 │── .gitignore
-│── README.md            
+│── README.md
+```
+          
 📜 License
 This project is open-source and available under the MIT License.
