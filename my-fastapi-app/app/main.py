@@ -18,7 +18,7 @@ async def home(): # defines an asynchronous function named read_root that will h
     return {"message": "Welcome to my bookshop!"} # returns a JSON response
 
 
-@app.post("/books/", response_model=BookResponse)
+@app.post("/add-books/", response_model=BookResponse)
 def add_book(book: BookCreate, db: Session = Depends(get_db)):
     db_book = create_book(db, book)    
     return db_book
