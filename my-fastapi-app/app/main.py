@@ -2,10 +2,14 @@
 
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
-from models import Book
-from database import engine, Base, get_db
+from database import engine, Base, get_db, SessionLocal
 from schemas import BookCreate, BookResponse
 from curd import create_book, get_books, delete_book
+
+
+# Create database tables
+Base.metadata.create_all(bind=engine)
+db = SessionLocal()
 
 # Import the FastAPI class from the fastapi package and initialize a new FastAPI instance.
 app = FastAPI()
@@ -19,11 +23,10 @@ async def home(): # defines an asynchronous function named read_root that will h
 
 
 @app.post("/add-books/", response_model=BookResponse)
-def add_book(book: BookCreate, db: Session = Depends(get_db)):
-    db_book = create_book(db, book)    
-    return db_book
+async def add_book(book: BookCreate, db: Session = Depends(get_db)):
+    return create_book(db, book)
 
-@app.get("/books/", response_model=list[BookResponse])
+@app.get("/add-books/", response_model=list[BookResponse])
 def list_books(db: Session = Depends(get_db)):
     return get_books(db)
 
