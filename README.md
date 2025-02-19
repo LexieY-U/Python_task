@@ -9,8 +9,10 @@ Automated tests with Pytest
 
 🚀 Getting Started
 1️⃣ Clone the Repository
+ ```bash
 git clone https://github.com/your-username/my-fastapi-app.git
 cd bookshop-api
+```
 2️⃣ Create a Virtual Environment
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
