@@ -1,13 +1,14 @@
 # CRUD operations for database
 
 from sqlalchemy.orm import Session
-from models import Book
 from schemas import BookCreate
+from models import Book
+from logging_config import logger
 
 
 # Book CRUD operations
 def create_book(db: Session, book: BookCreate):
-    db_book = Book(title=book.title, author=book.author, price=book.price, stock=book.stock)
+    db_book = Book(**book.dict())
     db.add(db_book)  # Add book to database session
     db.commit() # Save changes to database
     db.refresh(db_book)  # Reload book from database with assigned ID
